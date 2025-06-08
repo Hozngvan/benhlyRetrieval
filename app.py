@@ -58,5 +58,5 @@ if query:
                 if r['score'] > 0:
                     st.markdown(f"### 📝 {r['doc_id']}  (Score: {r['score']:.2f})")
                     st.markdown(f"🔗 [Xem nguồn]({r['url']})")
-                    st.write(r['preview'] + "...")
+                    st.write(r['preview'].replace("_", " ") + "...")
                     st.markdown("---")
