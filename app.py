@@ -34,7 +34,7 @@ def search_symptoms(query, preprocessed_documents, bm25, doc_ids, top_k=10):
             "doc_id": doc_id,
             "url": preprocessed_documents[doc_id]["url"],
             "score": score,
-            "preview": " ".join(preprocessed_documents[doc_id]["tokens"][:50])
+            "preview": " ".join(preprocessed_documents[doc_id]["tokens"][:100])
         })
     return results
 

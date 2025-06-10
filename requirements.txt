@@ -1,3 +1,5 @@
 streamlit
 pyvi
 rank_bm25
+google-generativeai
+python-dotenv
